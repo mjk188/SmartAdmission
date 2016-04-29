@@ -1,0 +1,138 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://www.smartadmission.com/ForeignUniversity1#"
+     xml:base="https://www.smartadmission.com/ForeignUniversity1"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="https://www.smartadmission.com/ForeignUniversity1"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://www.smartadmission.com/ForeignUniversity1#hasDepartment -->
+
+    <owl:ObjectProperty rdf:about="https://www.smartadmission.com/ForeignUniversity1#hasDepartment">
+        <rdfs:domain rdf:resource="https://www.smartadmission.com/ForeignUniversity1#College"/>
+        <rdfs:range rdf:resource="https://www.smartadmission.com/ForeignUniversity1#Department"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://www.smartadmission.com/ForeignUniversity1#hasProgramme -->
+
+    <owl:ObjectProperty rdf:about="https://www.smartadmission.com/ForeignUniversity1#hasProgramme">
+        <rdfs:domain rdf:resource="https://www.smartadmission.com/ForeignUniversity1#Department"/>
+        <rdfs:range rdf:resource="https://www.smartadmission.com/ForeignUniversity1#Programme"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://www.smartadmission.com/ForeignUniversity1#hasCollegeName -->
+
+    <owl:DatatypeProperty rdf:about="https://www.smartadmission.com/ForeignUniversity1#hasCollegeName">
+        <rdfs:domain rdf:resource="https://www.smartadmission.com/ForeignUniversity1#College"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://www.smartadmission.com/ForeignUniversity1#hasCriteria1 -->
+
+    <owl:DatatypeProperty rdf:about="https://www.smartadmission.com/ForeignUniversity1#hasCriteria1">
+        <rdfs:domain rdf:resource="https://www.smartadmission.com/ForeignUniversity1#Programme"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://www.smartadmission.com/ForeignUniversity1#hasCriteria2 -->
+
+    <owl:DatatypeProperty rdf:about="https://www.smartadmission.com/ForeignUniversity1#hasCriteria2">
+        <rdfs:domain rdf:resource="https://www.smartadmission.com/ForeignUniversity1#Programme"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://www.smartadmission.com/ForeignUniversity1#hasDName -->
+
+    <owl:DatatypeProperty rdf:about="https://www.smartadmission.com/ForeignUniversity1#hasDName">
+        <rdfs:domain rdf:resource="https://www.smartadmission.com/ForeignUniversity1#Department"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://www.smartadmission.com/ForeignUniversity1#hasHead -->
+
+    <owl:DatatypeProperty rdf:about="https://www.smartadmission.com/ForeignUniversity1#hasHead">
+        <rdfs:domain rdf:resource="https://www.smartadmission.com/ForeignUniversity1#Department"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://www.smartadmission.com/ForeignUniversity1#hasPName -->
+
+    <owl:DatatypeProperty rdf:about="https://www.smartadmission.com/ForeignUniversity1#hasPName">
+        <rdfs:domain rdf:resource="https://www.smartadmission.com/ForeignUniversity1#Programme"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://www.smartadmission.com/ForeignUniversity1#College -->
+
+    <owl:Class rdf:about="https://www.smartadmission.com/ForeignUniversity1#College"/>
+    
+
+
+    <!-- https://www.smartadmission.com/ForeignUniversity1#Department -->
+
+    <owl:Class rdf:about="https://www.smartadmission.com/ForeignUniversity1#Department"/>
+    
+
+
+    <!-- https://www.smartadmission.com/ForeignUniversity1#Programme -->
+
+    <owl:Class rdf:about="https://www.smartadmission.com/ForeignUniversity1#Programme"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.1.20160306-0033) https://github.com/owlcs/owlapi -->
+

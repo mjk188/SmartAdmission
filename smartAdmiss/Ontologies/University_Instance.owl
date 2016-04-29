@@ -1,0 +1,117 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns="https://www.smartadmission.com/University#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+  <owl:Ontology rdf:about="https://www.smartadmission.com/University">
+    <owl:versionIRI rdf:resource="https://www.smartadmission.com/University/1.0"/>
+  </owl:Ontology>
+  <owl:Class rdf:about="https://www.smartadmission.com/University#Course"/>
+  <owl:Class rdf:about="https://www.smartadmission.com/University#University"/>
+  <owl:Class rdf:about="https://www.smartadmission.com/University#Department"/>
+  <owl:ObjectProperty rdf:about="https://www.smartadmission.com/University#hasDepartment">
+    <rdfs:range rdf:resource="https://www.smartadmission.com/University#Department"/>
+    <rdfs:domain rdf:resource="https://www.smartadmission.com/University#University"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="https://www.smartadmission.com/University#hasCourse">
+    <rdfs:range rdf:resource="https://www.smartadmission.com/University#Course"/>
+    <rdfs:domain rdf:resource="https://www.smartadmission.com/University#Department"/>
+  </owl:ObjectProperty>
+  <owl:DatatypeProperty rdf:about="https://www.smartadmission.com/University#hasCName">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="https://www.smartadmission.com/University#Course"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="https://www.smartadmission.com/University#hasHOD">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="https://www.smartadmission.com/University#Department"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="https://www.smartadmission.com/University#hasCriteria2">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    <rdfs:domain rdf:resource="https://www.smartadmission.com/University#Course"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="https://www.smartadmission.com/University#hasDName">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="https://www.smartadmission.com/University#Department"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="https://www.smartadmission.com/University#hasCriteria1">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    <rdfs:domain rdf:resource="https://www.smartadmission.com/University#Course"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="https://www.smartadmission.com/University#hasUName">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="https://www.smartadmission.com/University#University"/>
+  </owl:DatatypeProperty>
+
+  <University rdf:about="https://www.smartadmission.com/University#university1">
+    <hasDepartment>
+      <Department rdf:about="https://www.smartadmission.com/University#university1department1">
+        <hasCourse>
+          <Course rdf:about="https://www.smartadmission.com/University#university1department1course2">
+            <hasCriteria2>700</hasCriteria2>
+            <hasCriteria1>90</hasCriteria1>
+            <hasCName>MTECH</hasCName>
+          </Course>
+        </hasCourse>
+        <hasCourse>
+          <Course rdf:about="https://www.smartadmission.com/University#university1department1course1">
+            <hasCriteria2>90</hasCriteria2>
+            <hasCriteria1>89</hasCriteria1>
+            <hasCName>BTECH</hasCName>
+          </Course>
+        </hasCourse>
+        <hasHOD>Devdhar</hasHOD>
+        <hasDName>IT</hasDName>
+      </Department>
+    </hasDepartment>
+    <hasUName>IIIT Bangalore</hasUName>
+  </University>
+
+   <University rdf:about="https://www.smartadmission.com/University#university2">
+    <hasDepartment>
+      <Department rdf:about="https://www.smartadmission.com/University#university2department1">
+        <hasCourse>
+          <Course rdf:about="https://www.smartadmission.com/University#university2department1course2">
+            <hasCriteria2>800</hasCriteria2>
+            <hasCriteria1>80</hasCriteria1>
+            <hasCName>MTECH</hasCName>
+          </Course>
+        </hasCourse>
+        <hasCourse>
+          <Course rdf:about="https://www.smartadmission.com/University#university2department1course1">
+            <hasCriteria2>70</hasCriteria2>
+            <hasCriteria1>70</hasCriteria1>
+            <hasCName>BTECH</hasCName>
+          </Course>
+        </hasCourse>
+        <hasHOD>HariHaran</hasHOD>
+        <hasDName>Computer Science</hasDName>
+      </Department>
+    </hasDepartment>
+    <hasUName>IIT Bombay</hasUName>
+  </University>
+
+  <University rdf:about="https://www.smartadmission.com/University#university3">
+    <hasDepartment>
+      <Department rdf:about="https://www.smartadmission.com/University#university3department1">
+        <hasCourse>
+          <Course rdf:about="https://www.smartadmission.com/University#university3department1course2">
+            <hasCriteria2>700</hasCriteria2>
+            <hasCriteria1>80</hasCriteria1>
+            <hasCName>MTECH</hasCName>
+          </Course>
+        </hasCourse>
+        <hasCourse>
+          <Course rdf:about="https://www.smartadmission.com/University#university1department3course1">
+            <hasCriteria2>90</hasCriteria2>
+            <hasCriteria1>89</hasCriteria1>
+            <hasCName>BTECH</hasCName>
+          </Course>
+        </hasCourse>
+        <hasHOD>Manoj lal</hasHOD>
+        <hasDName>Data Science</hasDName>
+      </Department>
+    </hasDepartment>
+    <hasUName>IIIT Hyderabad</hasUName>
+  </University>
+</rdf:RDF>

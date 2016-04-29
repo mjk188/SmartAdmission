@@ -1,0 +1,152 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://www.smartadmission.com/Student#"
+     xml:base="https://www.smartadmission.com/Student"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="https://www.smartadmission.com/Student">
+        <owl:versionIRI rdf:resource="https://www.smartadmission.com/Student/1.0"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://www.smartadmission.com/Student#hasQualification -->
+
+    <owl:ObjectProperty rdf:about="https://www.smartadmission.com/Student#hasQualification">
+        <rdfs:domain rdf:resource="https://www.smartadmission.com/Student#Student"/>
+        <rdfs:range rdf:resource="https://www.smartadmission.com/Student#Qualification"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://www.smartadmission.com/Student#appliedFor -->
+
+    <owl:DatatypeProperty rdf:about="https://www.smartadmission.com/Student#appliedFor">
+        <rdfs:domain rdf:resource="https://www.smartadmission.com/Student#Student"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://www.smartadmission.com/Student#consistOfGateMarks -->
+
+    <owl:DatatypeProperty rdf:about="https://www.smartadmission.com/Student#consistOfGateMarks">
+        <rdfs:domain rdf:resource="https://www.smartadmission.com/Student#Qualification"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://www.smartadmission.com/Student#consistOfGraduationMarks -->
+
+    <owl:DatatypeProperty rdf:about="https://www.smartadmission.com/Student#consistOfGraduationMarks">
+        <rdfs:domain rdf:resource="https://www.smartadmission.com/Student#Qualification"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://www.smartadmission.com/Student#consistOfXIIMarks -->
+
+    <owl:DatatypeProperty rdf:about="https://www.smartadmission.com/Student#consistOfXIIMarks">
+        <rdfs:domain rdf:resource="https://www.smartadmission.com/Student#Qualification"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://www.smartadmission.com/Student#consistOfXMarks -->
+
+    <owl:DatatypeProperty rdf:about="https://www.smartadmission.com/Student#consistOfXMarks">
+        <rdfs:domain rdf:resource="https://www.smartadmission.com/Student#Qualification"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://www.smartadmission.com/Student#hasContact -->
+
+    <owl:DatatypeProperty rdf:about="https://www.smartadmission.com/Student#hasContact">
+        <rdfs:domain rdf:resource="https://www.smartadmission.com/Student#Student"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#long"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://www.smartadmission.com/Student#hasDOB -->
+
+    <owl:DatatypeProperty rdf:about="https://www.smartadmission.com/Student#hasDOB">
+        <rdfs:domain rdf:resource="https://www.smartadmission.com/Student#Student"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://www.smartadmission.com/Student#hasName -->
+
+    <owl:DatatypeProperty rdf:about="https://www.smartadmission.com/Student#hasName">
+        <rdfs:domain rdf:resource="https://www.smartadmission.com/Student#Student"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://www.smartadmission.com/Student#hasSex -->
+
+    <owl:DatatypeProperty rdf:about="https://www.smartadmission.com/Student#hasSex">
+        <rdfs:domain rdf:resource="https://www.smartadmission.com/Student#Student"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://www.smartadmission.com/Student#Qualification -->
+
+    <owl:Class rdf:about="https://www.smartadmission.com/Student#Qualification"/>
+    
+
+
+    <!-- https://www.smartadmission.com/Student#Student -->
+
+    <owl:Class rdf:about="https://www.smartadmission.com/Student#Student"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.1.20160306-0033) https://github.com/owlcs/owlapi -->
+
